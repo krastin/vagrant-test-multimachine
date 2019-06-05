@@ -7,22 +7,39 @@ A multimachine vagrant file containing two web servers
 
 - web02
 
-# Template used
+- mysql
+
+# VM Image used
 
 [Ubuntu Xenial 64](https://app.vagrantup.com/krastin/boxes/xenial64)
 
 # How to Use
 
 ## Install Vagrant
-TODO
+Learn where to grab Vagrant from and how to install it [here](https://www.vagrantup.com/docs/installation/).
 
 ## Create machine instances
-TODO
+   
+    vagrant up
+   
+First time it will take a while because the VM image is being downloaded
+
+## Log on to machine instances
+
+    vagrant ssh web01
+    vagrant ssh web02
+    vagrant ssh mysql
+    
+## Destroy machine instances
+
+    vagrant destroy -f
 
 # TODO
 
-- [ ] Add Install Vagrant documentation
-- [ ] Add Create Machines documentation
+Not much
 
 # DONE
+
 - [x] Add Vagrantfile
+- [x] Add Install Vagrant documentation
+- [x] Add Create Machines documentation
