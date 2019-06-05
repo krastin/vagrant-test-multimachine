@@ -23,6 +23,6 @@ TODO
 
 - [ ] Add Install Vagrant documentation
 - [ ] Add Create Machines documentation
-- [ ] Add Vagrantfile
 
 # DONE
+- [x] Add Vagrantfile
