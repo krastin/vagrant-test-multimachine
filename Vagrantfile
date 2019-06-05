@@ -8,8 +8,9 @@ Vagrant.configure("2") do |config|
     end
   end
 
-#  config.vm.define vm_name="mysql" do |node|
-#    node.vm.box = "krastin/xenial64"
-#    node.vm.hostname = vm_name
-#  end
+  config.vm.define vm_name="mysql" do |node|
+    node.vm.box = "krastin/xenial64"
+    node.vm.hostname = vm_name
+    node.vm.provision "shell", path: "provision/mysql.sh"
+  end
 end
