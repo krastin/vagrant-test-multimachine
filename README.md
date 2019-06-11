@@ -1,5 +1,5 @@
 # vagrant-test-multimachine
-A multimachine vagrant file containing two web servers
+A multimachine vagrant file containing two web servers and a database server
 
 # List of machines
 
@@ -25,6 +25,8 @@ Learn where to grab Vagrant from and how to install it [here](https://www.vagran
 First time it will take a while because the VM image is being downloaded
 
 ## Log on to machine instances
+
+Usernames and/or passwords, where applicable, are either _ubuntu_ or just nothing.
 
     vagrant ssh web01
     vagrant ssh web02
